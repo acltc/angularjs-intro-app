@@ -14,6 +14,10 @@
       }
     };
 
+    $scope.isPositive = function(review) {
+      return review.indexOf("stupid") == -1;
+    };
+
     window.scope = $scope;
   });
 })();
