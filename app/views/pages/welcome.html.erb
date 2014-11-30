@@ -3,6 +3,11 @@
   <div ng-controller="stuffCtrl">
     <p>{{ message }}</p>
     <input ng-model="message">
+
+    <div id="reviews">
+      <h2>AngularJS Reviews:</h2>
+      <li ng-repeat="review in reviews">{{ review }}</li>
+    </div>
   </div>
 </div>
 
