@@ -6,7 +6,7 @@
 
     <div id="reviews">
       <h2>AngularJS Reviews:</h2>
-      <li ng-repeat="review in reviews" ng-if="isPositive(review.text)">{{ review.text }}</li>
+      <li ng-repeat="review in reviews" ng-if="isPositive(review.text)"><strong>{{ review.rating }} STARS - {{ review.reviewer }}: {{ review.text }} - </li>
     </div>
 
     <h3>Leave your own review of AngularJS!</h3>
