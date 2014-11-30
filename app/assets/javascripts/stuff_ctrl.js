@@ -23,10 +23,17 @@
       }
     ];
 
-    $scope.addReview = function(review) {
-      if(review) {
-        $scope.reviews.push(review);
-        $scope.newReview = "";
+    $scope.addReview = function(text, rating, name) {
+      if(text && rating && name) {
+        var newReview = {
+          text: text,
+          rating: rating,
+          name: name
+        }
+        $scope.reviews.push(newReview);
+        $scope.newReviewText = "";
+        $scope.newReviewRating = "";
+        $scope.newReviewName = "";
       }
     };
 

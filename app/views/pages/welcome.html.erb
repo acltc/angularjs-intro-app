@@ -10,8 +10,10 @@
     </div>
 
     <h3>Leave your own review of AngularJS!</h3>
-    <input ng-model="newReview">
-    <button ng-click="addReview(newReview)">Add Review</button>
+    <label>Review:</label><input ng-model="newReviewText">
+    <label>Rating:</label><input ng-model="newReviewRating">
+    <label>Your Name:</label><input ng-model="newReviewReviewer">
+    <button ng-click="addReview(newReviewText, newReviewRating, newReviewReviewer)">Add Review</button>
   </div>
 </div>
 
