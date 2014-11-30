@@ -9,6 +9,7 @@
 
     $scope.addReview = function(review) {
       $scope.reviews.push(review);
+      $scope.newReview = "";
     };
 
     window.scope = $scope;
